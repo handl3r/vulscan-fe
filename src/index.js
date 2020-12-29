@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {ListProject} from "./components/dashboard/listProject";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/*<ListProject />*/}
   </React.StrictMode>,
   document.getElementById('root')
 );

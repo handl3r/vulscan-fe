@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter, Switch, Route, NavLink} from 'react-router-dom';
 import Home from './components/home';
 import Login from "./components/login";
-import Dashboard from "./components/dashboard";
+import Dashboard from "./components/dashboard/dashboard";
 
 function App() {
     return (
