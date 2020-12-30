@@ -3,6 +3,7 @@ import {BrowserRouter, Switch, Route, NavLink} from 'react-router-dom';
 import Home from './components/home';
 import Login from "./components/login";
 import Dashboard from "./components/dashboard/dashboard";
+import {Project} from "./components/project/project";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                             <Route exact path="/" component={Home}/>
                             <Route path="/login" component={Login}/>
                             <Route path="/dashboard" component={Dashboard}/>
+                            <Route exact path={"/projects/:id"} component={Project}/>
                         </Switch>
                     </div>
                 </div>

@@ -10,7 +10,8 @@ export class MiniProject extends React.Component {
     render() {
         return (
             <ul>
-                <li><Link to={""}>Click here to access</Link></li>
+                <li><Link to={"/projects/".concat(this.state.id.toString())}>Click here to
+                    access</Link></li>
                 <li>Name : {this.state.name}</li>
                 <li>ID : {this.state.id}</li>
                 <li>Domain : {this.state.domain}</li>
