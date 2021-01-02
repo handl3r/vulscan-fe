@@ -4,6 +4,7 @@ import Home from './components/home';
 import Login from "./components/login";
 import Dashboard from "./components/dashboard/dashboard";
 import {Project} from "./components/project/project";
+import {Segment} from "./components/segment/segment";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                             <Route path="/login" component={Login}/>
                             <Route path="/dashboard" component={Dashboard}/>
                             <Route exact path={"/projects/:id"} component={Project}/>
+                            <Route exact path={"/segments/:id"} component={Segment} />
                         </Switch>
                     </div>
                 </div>

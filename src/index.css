@@ -44,3 +44,7 @@ code {
 ul {
   list-style-type: none;
 }
+#hidden-target {
+  cursor: pointer;
+  text-decoration: underline;
+}

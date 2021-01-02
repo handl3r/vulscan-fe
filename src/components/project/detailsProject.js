@@ -3,6 +3,7 @@ import {MimiSegment} from "./mimiSegment";
 import {getToken} from "../../utils/common";
 import axios from "axios";
 import {MiniProject} from "../dashboard/miniProject";
+import {CreateSegment} from "./createSegment";
 
 export class DetailsProject extends React.Component {
     constructor(props) {
@@ -49,11 +50,16 @@ export class DetailsProject extends React.Component {
         return (
             <div className="detail-project">
                 <div className="project-info">
-                    <div>Project</div>
+                    <h2>Project</h2>
                     <div>{this.state.miniProject}</div>
                 </div>
+                <hr/>
+                <div className="actions">
+                    <h2>Actions</h2>
+                    <CreateSegment projectID={this.state.projectID} />
+                </div>
                 <div className="segments-info">
-                    <div>Segments</div>
+                    <h2>Segments</h2>
                     <hr/>
                     <div>{this.state.segments}</div>
                 </div>

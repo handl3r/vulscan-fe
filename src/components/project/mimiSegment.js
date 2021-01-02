@@ -1,4 +1,5 @@
 import * as React from "react";
+import {Link} from "react-router-dom";
 
 export class MimiSegment extends React.Component {
     constructor(props) {
@@ -13,6 +14,8 @@ export class MimiSegment extends React.Component {
     render() {
         return (
             <div>
+                <li><Link to={"/segments/".concat(this.state.id.toString())}>Click here to
+                    access</Link></li>
                 <div><span>ID: </span> {this.state.id}</div>
                 <div><span>Is Crawling: </span> {this.state.isCrawling}</div>
                 <div><span>Is Scanned: </span> {this.state.isScanned}</div>
