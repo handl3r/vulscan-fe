@@ -15,7 +15,6 @@ export class MiniProject extends React.Component {
                 <li>Name : {this.state.name}</li>
                 <li>ID : {this.state.id}</li>
                 <li>Domain : {this.state.domain}</li>
-                <li>VulNumber : {this.state.vulNumber}</li>
             </ul>
         )
     }
